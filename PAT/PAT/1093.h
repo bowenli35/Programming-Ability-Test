@@ -11,6 +11,6 @@
 
 #include <stdio.h>
 
-void strs_plus_strs(void)
+void strs_plus_strs(void);
 
 #endif /* _093_h */

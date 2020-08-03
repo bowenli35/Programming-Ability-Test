@@ -24,4 +24,3 @@ void strs_plus_strs(void) {
     }
     printf("%s\n", toPrint);
 }
-
