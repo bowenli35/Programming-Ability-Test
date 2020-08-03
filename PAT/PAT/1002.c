@@ -30,7 +30,7 @@ void write_this_number(void) {
     char n[101];
     int i, sum = 0;
     int numbers[101];
-    char* pinyin[10] = {
+    char* const pinyin[10] = {
         "ling", "yi", "er", "san", "si",
         "wu", "liu", "qi", "ba", "jiu"
     };
