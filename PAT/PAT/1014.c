@@ -52,7 +52,6 @@ void SherlockHolmes(void) {
 char day(char* s1, char* s2) {
     char ans = 0;
     int capitalLetters[7] = {0};    //ABCDEFG
-    char *temp1 = s1, *temp2 = s2;
     while (*s1) {
         if (*s1 >= 'A' && *s1 <= 'G') {
             capitalLetters[*s1 - 'A'] = 1;
@@ -66,8 +65,6 @@ char day(char* s1, char* s2) {
         }
         s2++;
     }
-    s1 = temp1;
-    s2 = temp2;
     return ans;
 }
 
@@ -76,7 +73,6 @@ int hour(char* s1, char* s2, char fs) {
     int second = 0;
     int capitalLetters[14] = {0};
     int numbers[10] = {0};
-    char *temp1 = s1, *temp2 = s2;
     while (*s1) {
         if (*s1 == fs) {
             second = 1;
@@ -106,8 +102,6 @@ int hour(char* s1, char* s2, char fs) {
         }
         s2++;
     }
-    s1 = temp1;
-    s2 = temp2;
     if (ans >= 'A' && ans <= 'N') {
         return ans - 'A' + 10;
     }
@@ -132,4 +126,8 @@ int minute(char* s1, char* s2) {
         }
     }
     return ans1 > ans2 ? ans1 : ans2;
+}
+
+int main() {
+    SherlockHolmes();
 }
