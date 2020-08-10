@@ -128,6 +128,3 @@ int minute(char* s1, char* s2) {
     return ans1 > ans2 ? ans1 : ans2;
 }
 
-int main() {
-    SherlockHolmes();
-}
