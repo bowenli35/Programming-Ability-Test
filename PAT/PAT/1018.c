@@ -100,3 +100,5 @@ int max(int* a) {
     else if (a[0] < a[1] && a[1] == a[2]) return 2;
     else return 2;
 }
+
+
